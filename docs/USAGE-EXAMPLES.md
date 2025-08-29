@@ -1,6 +1,6 @@
 # Usage Examples for Base Multi Contracts
 
-This guide provides examples for interacting with the contracts deployed in the Base Multi Contracts repository on Base mainnet.
+This guide provides examples for interacting with the contracts deployed in the Base Multi Contracts repository on Base Sepolia or mainnet.
 
 ## 1. TokenVault
 - **Description**: Stores token deposits.
@@ -8,7 +8,7 @@ This guide provides examples for interacting with the contracts deployed in the 
   - **Deposit 10 tokens**:
     - Function: `deposit(uint256 _amount)`
     - Input: `10000000000000000000` (10 tokens with 18 decimals)
-    - Wallet: Use `0xF618AbF...` to deposit.
+    - Wallet: Use `0xF618AbF...`.
   - **Withdraw 5 tokens**:
     - Function: `withdraw(uint256 _amount)`
     - Input: `5000000000000000000` (5 tokens)
@@ -62,11 +62,48 @@ This guide provides examples for interacting with the contracts deployed in the 
     - Input: `3000000000000000000` (3 tokens)
     - Wallet: `0x57BB90...` (before auction ends).
 
+## 6. LendingPool
+- **Description**: Manages lending of tokens.
+- **Examples**:
+  - **Borrow 1 token**:
+    - Function: `borrow(uint256 _amount)`
+    - Input: `1000000000000000000` (1 token)
+    - Wallet: `0xF618AbF...`.
+  - **Repay 0.5 tokens**:
+    - Function: `repay(uint256 _amount)`
+    - Input: `500000000000000000` (0.5 tokens)
+    - Wallet: Same as borrower.
+
+## 7. NFTMarketplace
+- **Description**: Allows NFT purchases.
+- **Examples**:
+  - **Buy NFT**:
+    - Function: `buyNFT()`
+    - Input: None
+    - Wallet: `0xF618AbF...` (creates token ID 0).
+  - **Buy Another NFT**:
+    - Function: `buyNFT()`
+    - Input: None
+    - Wallet: `0x57BB90...` (creates token ID 1).
+
+## 8. Crowdfunding
+- **Description**: Collects funds toward a goal.
+- **Examples**:
+  - **Fund 2 tokens**:
+    - Function: `fund(uint256 _amount)`
+    - Input: `2000000000000000000` (2 tokens)
+    - Wallet: `0xF618AbF...`.
+  - **Fund 1 token**:
+    - Function: `fund(uint256 _amount)`
+    - Input: `1000000000000000000` (1 token)
+    - Wallet: `0x57BB90...`.
+
 ## How to Interact
-- Use **basescan.org** (mainnet) to call functions via the Write Contract tab.
-- Ensure wallets have ETH for gas fees (~$5-10 per transaction).
+- Use **basescan.org** (mainnet) or **sepolia.basescan.org** (Sepolia) to call functions via the Write Contract tab.
+- Ensure wallets have ETH for gas fees (~$5-10 on mainnet, ~0.01 on Sepolia).
 - Replace example addresses (e.g., `0x57BB90...`) with your actual wallet addresses.
+- Space transactions (1 every 15-30 minutes) to avoid flagging.
 
 ## Notes
 - All token amounts use 18 decimals (e.g., 1 token = 1000000000000000000).
-- Test with multiple wallets to maximize activity for Base Builder Rewards.
+- Test with 3+ wallets to maximize activity for Base Builder Rewards.
