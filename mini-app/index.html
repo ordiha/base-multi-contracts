@@ -5,8 +5,15 @@
     <button onclick="depositToken()">Deposit 1 Token</button>
     <p id="result"></p>
     <script>
-      function depositToken() {
-        document.getElementById("result").innerText = "Depositing 1 token... (Check your wallet!)";
+      async function depositToken() {
+        if (typeof window.ethereum !== 'undefined') {
+          const result = document.getElementById("result");
+          result.innerText = "Connecting to wallet...";
+          await window.ethereum.request({ method: 'eth_requestAccounts' });
+          result.innerText = "Deposited 1 token! (Simulated)";
+        } else {
+          result.innerText = "Please install MetaMask!";
+        }
       }
     </script>
   </body>
