@@ -5,6 +5,7 @@ Multi-contract system on Base Sepolia.
 - VotingSystem: 0x940C320433693C5C21aE7218D3BE4BD4021F94Ec  Sepolia Basescan link:https://sepolia.basescan.org/address/0x940c320433693c5c21ae7218d3be4bd4021f94ec#code
 - StakeManager: 0x6625AE5B708966650fA2910ea940d6b396BF687C  Sepolia Basescan link:https://sepolia.basescan.org/address/0x6625ae5b708966650fa2910ea940d6b396bf687c#code
 -  AuctionHouse: 0xFBA7e80A2b3DaBDcE285946Aae51f62983937a84 Sepolia Basescan link:https://sepolia.basescan.org/address/0xfba7e80a2b3dabdce285946aae51f62983937a84#code
+-  Lendingpool: 0x6A45D241d5b30fE7072aCA02d71A799c4648d1B4  Sepolia Basescan link: https://sepolia.basescan.org/address/0x6a45d241d5b30fe7072aca02d71a799c4648d1b4#code
 - Deploy via Remix, test with multiple wallets.
 
 - Multi-contract system on Base Mainnet.
@@ -13,5 +14,6 @@ Multi-contract system on Base Sepolia.
 - VotingSystem: 0xFF77A10D776C884fe4097acE42417e64D5AbE97f Basescan link: https://basescan.org/address/0xff77a10d776c884fe4097ace42417e64d5abe97f#code
 - StakeManager: 0x63066afb1c5Cf8Be682EAc2144150ec643D0e5c6  Basescan link:https://basescan.org/address/0x63066afb1c5cf8be682eac2144150ec643d0e5c6#code
 - AuctionHouse: 0x8B4395b384986827f6290F9C344b643F1f223109 Basescan link: https://basescan.org/address/0x8b4395b384986827f6290f9c344b643f1f223109#code
+- Lendingpool: 0x843971d3dCc52f2743eF29cC54ceC05e10359EEF  Basescan link: https://basescan.org/address/0x843971d3dcc52f2743ef29cc54cec05e10359eef#code
 - Deploy via Remix, test with multiple wallets.
 
